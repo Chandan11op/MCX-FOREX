@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/tauri-apps/tauri/dev/crates/tauri-config-schema/schema.json",
+  "productName": "MCX Live Terminal",
+  "version": "1.0.0",
+  "identifier": "com.mcx.terminal",
+  "build": {
+    "beforeDevCommand": "npm --workspace=apps/web run dev",
+    "beforeBuildCommand": "npm --workspace=apps/web run build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../web/dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "MCX Commodity Live Market Platform",
+        "width": 1280,
+        "height": 800,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@mcx/service-market-data",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@mcx/shared-types": "*",
+    "@mcx/shared-utils": "*",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/ws": "^8.5.10",
+    "typescript": "^5.3.3"
+  }
+}
