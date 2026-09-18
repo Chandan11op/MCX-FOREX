@@ -1,19 +1,12 @@
 {
   "mcpServers": {
-    "market-data-mcp": {
-      "command": "node",
+    "project-filesystem": {
+      "command": "npx",
       "args": [
-        "./mcp/market-data-mcp/index.js"
-      ],
-      "env": {
-        "MARKET_DATA_PROVIDER": "upstox",
-        "UPSTOX_CLIENT_ID": "${UPSTOX_CLIENT_ID}",
-        "UPSTOX_CLIENT_SECRET": "${UPSTOX_CLIENT_SECRET}",
-        "UPSTOX_ACCESS_TOKEN": "${UPSTOX_ACCESS_TOKEN}",
-        "MCX_DATA_PROVIDER": "upstox",
-        "ENABLE_LIVE_FEED": "true",
-        "LIVE_LATENCY_TARGET_MS": "1000"
-      }
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "${workspaceFolder}"
+      ]
     }
   }
 }
