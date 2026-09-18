@@ -1,3 +1,5 @@
+import { BASE_URL } from './api';
+
 export interface ExportRequest {
   commodity: string;
   contract: string;
@@ -18,7 +20,7 @@ export const exportApi = {
         quote: req.quote || 'INR',
       }).toString();
 
-      const url = `/api/export?${queryParams}`;
+      const url = `${BASE_URL}/api/export?${queryParams}`;
 
       const res = await fetch(url);
       if (!res.ok) {
