@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Professional MCX commodity market-data web application monorepo",
+  "engines": {
+    "node": ">=18"
+  },
   "workspaces": [
     "apps/*",
     "server"
